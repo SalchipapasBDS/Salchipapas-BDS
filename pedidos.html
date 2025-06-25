@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salchipapa BDS - Pedidos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="text-center bg-rojo text-black py-3">
+    <h1 class="fw-bold">SALCHIPAPA BDS</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg bg-negro navbar-dark">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="#">Menú</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="#">Conócenos</a></li>
+        <li class="nav-item px-3"><a class="nav-link" href="#">Contáctanos</a></li>
+        <li class="nav-item px-3"><a class="nav-link active" href="#">Pedidos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección principal -->
+  <main class="bg-amarillo p-4">
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- Columna izquierda: pedido -->
+        <div class="col-md-8 border-end">
+          <h5 class="fw-bold">Listado de pedidos</h5>
+          <div class="d-flex align-items-start mt-3">
+            <img src="Imagenes/salchi.png" alt="Salchipapa" class="img-thumbnail me-3" style="width:100px;">
+            <div>
+              <h6 class="fw-bold">Salchipapa clásica</h6>
+              <p class="mb-1">Papas fritas doradas con salchipapa tradicional. Incluye dos salsas a elección.</p>
+            </div>
+            <div class="ms-auto text-center">
+              <label class="fw-bold">Cantidad</label>
+              <div class="input-group quantity-controls">
+                <button class="btn btn-dark" type="button" onclick="cambiarCantidad(-1)">−</button>
+                <input id="cantidad" type="number" class="form-control text-center" value="3" style="max-width: 60px;" readonly>
+                <button class="btn btn-dark" type="button" onclick="cambiarCantidad(1)">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <div class="mt-5 d-flex justify-content-around">
+            <button class="btn btn-rojo px-4 fw-bold">Confirmar</button>
+            <button class="btn btn-rojo px-4 fw-bold">Borrar</button>
+          </div>
+        </div>
+
+        <!-- Columna derecha: datos -->
+        <div class="col-md-4">
+          <h6 class="fw-bold">DATOS PARA ENVIAR</h6>
+
+          <div class="mb-2">
+            <label for="nombre" class="form-label fw-bold">Nombre:</label>
+            <input type="text" id="nombre" class="form-control" value="Juanita">
+          </div>
+
+          <div class="mb-2">
+            <label for="apellido" class="form-label fw-bold">Apellido:</label>
+            <input type="text" id="apellido" class="form-control" value="Alcachofa">
+          </div>
+
+          <div class="mb-3">
+            <label for="nit" class="form-label fw-bold">NIT:</label>
+            <input type="text" id="nit" class="form-control" value="1234567">
+          </div>
+
+          <label class="fw-bold">Especificaciones del pedido</label>
+          <input type="text" class="form-control mb-3" value="Salsa Ketchup y Mayonesa.">
+
+          <label class="fw-bold">Métodos de pago</label>
+          <div class="d-flex align-items-center mb-2">
+            <img src="Imagenes/efectivo.png" alt="efectivo" class="me-2" width="40">
+            <img src="Imagenes/transferencia.png" alt="transferencia" class="me-2" width="40">
+            <img src="Imagenes/qr.png" alt="qr" width="40">
+          </div>
+
+          <div class="d-flex justify-content-between mb-4">
+            <span class="badge bg-danger p-2">Efectivo</span>
+            <span class="badge bg-danger p-2">Transferencia</span>
+            <span class="badge bg-danger p-2">QR</span>
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-rojo px-5 fw-bold">Enviar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Script cantidad -->
+  <script>
+    function cambiarCantidad(valor) {
+      const input = document.getElementById("cantidad");
+      let actual = parseInt(input.value);
+      if (!isNaN(actual)) {
+        let nuevo = actual + valor;
+        if (nuevo >= 0) {
+          input.value = nuevo;
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
