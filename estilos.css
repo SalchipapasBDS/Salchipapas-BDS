@@ -1,0 +1,184 @@
+/* Fondo del encabezado */
+.encabezado {
+  background-color: #d72626; /* Rojo */
+  color: black;
+  font-weight: bold;
+}
+
+/* Barra de navegación negra */
+.barra-nav {
+  background-color: black;
+}
+
+.barra-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+}
+
+.barra-nav .nav-link:hover,
+.barra-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+/* Fondo amarillo claro */
+.fondo-principal {
+  background-color: #e6e19e;
+  height: 80vh;
+}
+
+/* Logo */
+.logo-img {
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+}
+
+/* Fondo del encabezado */
+.encabezado {
+  background-color: #d72626; /* Rojo fuerte */
+  color: black;
+  font-weight: bold;
+}
+
+/* Barra de navegación */
+.barra-nav {
+  background-color: black;
+}
+
+.barra-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+}
+
+.barra-nav .nav-link:hover,
+.barra-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+/* Fondo general */
+.fondo-principal {
+  background-color: #e6e19e; /* Amarillo claro */
+  min-height: 100vh;
+}
+
+/* Tarjetas del menú */
+.card-menu {
+  background-color: #fffbe6; /* Ligero tono amarillo */
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  padding: 1rem;
+  min-height: 100%;
+}
+
+.card-menu .card-title {
+  font-weight: bold;
+}
+
+.card-menu .btn-pedir {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card-menu .btn-pedir:hover {
+  background-color: darkred;
+}
+
+/* Logo en Conócenos */
+.logo-conocenos {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Botones de Misión, Visión, Valores */
+.btn-etiqueta {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 5px 15px;
+  border: 2px solid black;
+}
+
+/* Texto de la sección */
+.info-conocenos p, .info-conocenos ul {
+  font-size: 1rem;
+  color: black;
+  max-width: 500px;
+}
+
+/* Colores personalizados */
+.bg-rojo {
+  background-color: #d92121; /* rojo fuerte */
+}
+
+.bg-negro {
+  background-color: #000000;
+}
+
+.bg-amarillo {
+  background-color: #f0efb0;
+}
+
+/* Logo */
+.logo {
+  max-width: 300px;
+}
+
+/* Tipografía */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Colores */
+.bg-rojo {
+  background-color: #d92121;
+}
+
+.bg-negro {
+  background-color: #000;
+}
+
+.bg-amarillo {
+  background-color: #f0efb0;
+}
+
+/* Botones personalizados */
+.btn-rojo {
+  background-color: #d92121;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-rojo:hover {
+  background-color: #b81717;
+}
+
+/* Tipografía */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Cantidad con + y - */
+.quantity-controls button {
+  min-width: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px 8px;
+}
